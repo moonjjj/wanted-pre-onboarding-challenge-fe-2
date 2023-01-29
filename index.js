@@ -75,7 +75,7 @@ function updateTags(t_num, tags) {
  * 할 일을 삭제 할 수 있습니다. ( id 기반 )
  *
  * @param {number} t_num 각 할 일의 기본키역할을 합니다. 
- * @returns {Object} 할 일을 삭제합니다.
+ * @returns {Promise<any>} 할 일을 삭제합니다.
  */
 function deleteTodo(t_num) {
   return "할일 삭제 ";
@@ -86,7 +86,7 @@ function deleteTodo(t_num) {
  * Delete - 
  * 모든 할 일을 제거합니다.
  *
- * @returns {Object} 모든 할 일을 삭제합니다.
+ * @returns {Promise<any>} 모든 할 일을 삭제합니다.
  */
 function deleteAllTodo() {
   return "할일 전체 삭제하기";
@@ -98,7 +98,7 @@ function deleteAllTodo() {
  *
  * @param {number} t_num 각 할 일의 기본키역할을 합니다. 
  * @param {Array} tags 할 일에 붙는 태그들입니다. 여러개가 태깅될 수 있습니다.
- * @returns {Object} 태그를 삭제합니다.
+ * @returns {Promise<any>} 태그를 삭제합니다.
  */
 function deleteTags(t_num, tags) {
   return "특정 할 일의 특정 태그 삭제";
@@ -109,7 +109,7 @@ function deleteTags(t_num, tags) {
  * 특정 할 일의 모든 태그 삭제
  *
  * @param {number} t_num 각 할 일의 기본키역할을 합니다. 
- * @returns {Object} 모든 태그를 삭제합니다.
+ * @returns {Promise<any>} 모든 태그를 삭제합니다.
  */
 function deleteAllTags(t_num) {
   return "모든 태그를 삭제하기";
