@@ -104,7 +104,7 @@
     
 
     
-    <h4 class="name" id="createTodo"><span class="type-signature"></span>createTodo<span class="signature">(t_num, contents, is_success, category, tags)</span><span class="type-signature"> &rarr; {string}</span></h4>
+    <h4 class="name" id="createTodo"><span class="type-signature"></span>createTodo<span class="signature">(t_num, contents, is_success, category, tags)</span><span class="type-signature"> &rarr; {Object}</span></h4>
     
 
     
@@ -338,7 +338,7 @@
     </dt>
     <dd>
         
-<span class="param-type">string</span>
+<span class="param-type">Object</span>
 
 
     </dd>
@@ -356,7 +356,621 @@
     
 
     
-    <h4 class="name" id="readDetailTodo"><span class="type-signature"></span>readDetailTodo<span class="signature">(t_num, contents, is_success, category, tags)</span><span class="type-signature"> &rarr; {string}</span></h4>
+    <h4 class="name" id="deleteAllTags"><span class="type-signature"></span>deleteAllTags<span class="signature">(t_num)</span><span class="type-signature"> &rarr; {Object}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Delete - 
+특정 할 일의 모든 태그 삭제
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>t_num</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">각 할 일의 기본키역할을 합니다.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line114">line 114</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    모든 태그를 삭제합니다.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Object</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="deleteAllTodo"><span class="type-signature"></span>deleteAllTodo<span class="signature">()</span><span class="type-signature"> &rarr; {Object}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Delete - 
+모든 할 일을 제거합니다.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line91">line 91</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    모든 할 일을 삭제합니다.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Object</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="deleteTags"><span class="type-signature"></span>deleteTags<span class="signature">(t_num, tags)</span><span class="type-signature"> &rarr; {Object}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Delete - 
+특정 할 일의 특정 태그를 삭제할 수 있습니다.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>t_num</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">각 할 일의 기본키역할을 합니다.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>tags</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">할 일에 붙는 태그들입니다. 여러개가 태깅될 수 있습니다.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line103">line 103</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    태그를 삭제합니다.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Object</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="deleteTodo"><span class="type-signature"></span>deleteTodo<span class="signature">(t_num)</span><span class="type-signature"> &rarr; {Object}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Delete - 
+할 일을 삭제 할 수 있습니다. ( id 기반 )
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>t_num</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">각 할 일의 기본키역할을 합니다.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line80">line 80</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    할 일을 삭제합니다.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Object</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="readDetailTodo"><span class="type-signature"></span>readDetailTodo<span class="signature">(t_num, contents, is_success, category, tags)</span><span class="type-signature"> &rarr; {Object}</span></h4>
     
 
     
@@ -590,7 +1204,7 @@
     </dt>
     <dd>
         
-<span class="param-type">string</span>
+<span class="param-type">Object</span>
 
 
     </dd>
@@ -608,7 +1222,7 @@
     
 
     
-    <h4 class="name" id="readListTodo"><span class="type-signature"></span>readListTodo<span class="signature">(t_num, contents)</span><span class="type-signature"> &rarr; {string}</span></h4>
+    <h4 class="name" id="readListTodo"><span class="type-signature"></span>readListTodo<span class="signature">(t_num, contents)</span><span class="type-signature"> &rarr; {Object}</span></h4>
     
 
     
@@ -773,7 +1387,7 @@
     </dt>
     <dd>
         
-<span class="param-type">string</span>
+<span class="param-type">Object</span>
 
 
     </dd>
@@ -791,7 +1405,7 @@
     
 
     
-    <h4 class="name" id="updateTags"><span class="type-signature"></span>updateTags<span class="signature">(t_num, contents, is_success, category, tags)</span><span class="type-signature"> &rarr; {string}</span></h4>
+    <h4 class="name" id="updateTags"><span class="type-signature"></span>updateTags<span class="signature">(t_num, tags)</span><span class="type-signature"> &rarr; {Object}</span></h4>
     
 
     
@@ -859,75 +1473,6 @@
 
         <tr>
             
-                <td class="name"><code>contents</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">할 일의 내용입니다.</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>is_success</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Boolean</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">할 일의 완료여부입니다.</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>category</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">할 일의 카테고리입니다.</td>
-        </tr>
-
-    
-
-        <tr>
-            
                 <td class="name"><code>tags</code></td>
             
 
@@ -985,7 +1530,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="index.js.html">index.js</a>, <a href="index.js.html#line73">line 73</a>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line68">line 68</a>
     </li></ul></dd>
     
 
@@ -1025,7 +1570,7 @@
     </dt>
     <dd>
         
-<span class="param-type">string</span>
+<span class="param-type">Object</span>
 
 
     </dd>
@@ -1043,7 +1588,7 @@
     
 
     
-    <h4 class="name" id="updateTodo"><span class="type-signature"></span>updateTodo<span class="signature">(t_num, contents, is_success, category)</span><span class="type-signature"> &rarr; {string}</span></h4>
+    <h4 class="name" id="updateTodo"><span class="type-signature"></span>updateTodo<span class="signature">(t_num, contents, is_success, category)</span><span class="type-signature"> &rarr; {Object}</span></h4>
     
 
     
@@ -1254,7 +1799,7 @@
     </dt>
     <dd>
         
-<span class="param-type">string</span>
+<span class="param-type">Object</span>
 
 
     </dd>
@@ -1282,13 +1827,13 @@
 </div>
 
 <nav>
-    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#createTodo">createTodo</a></li><li><a href="global.html#readDetailTodo">readDetailTodo</a></li><li><a href="global.html#readListTodo">readListTodo</a></li><li><a href="global.html#updateTags">updateTags</a></li><li><a href="global.html#updateTodo">updateTodo</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#createTodo">createTodo</a></li><li><a href="global.html#deleteAllTags">deleteAllTags</a></li><li><a href="global.html#deleteAllTodo">deleteAllTodo</a></li><li><a href="global.html#deleteTags">deleteTags</a></li><li><a href="global.html#deleteTodo">deleteTodo</a></li><li><a href="global.html#readDetailTodo">readDetailTodo</a></li><li><a href="global.html#readListTodo">readListTodo</a></li><li><a href="global.html#updateTags">updateTags</a></li><li><a href="global.html#updateTodo">updateTodo</a></li></ul>
 </nav>
 
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.0</a> on Sun Jan 29 2023 18:44:40 GMT+0900 (대한민국 표준시)
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.0</a> on Sun Jan 29 2023 18:56:05 GMT+0900 (대한민국 표준시)
 </footer>
 
 <script> prettyPrint(); </script>
